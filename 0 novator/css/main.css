@@ -1,0 +1,2266 @@
+/* ==========================================================
+   _reset
+   ========================================================== */
+@import url("https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,700&subset=cyrillic");
+/* line 5, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* line 26, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+/* line 30, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+body {
+  line-height: 1; }
+
+/* line 33, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+ol, ul {
+  list-style: none; }
+
+/* line 36, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+blockquote, q {
+  quotes: none; }
+
+/* line 39, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* line 44, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* line 48, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+html {
+  color: #222;
+  font-size: 1em;
+  line-height: 1.4; }
+
+/* line 53, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 57, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* line 61, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+:focus {
+  outline: none; }
+
+/* line 64, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* line 72, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/* line 80, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* line 85, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+textarea {
+  resize: vertical; }
+
+/* line 88, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+input, textarea {
+  box-sizing: border-box; }
+
+/* line 91, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* line 97, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+a {
+  text-decoration: none; }
+
+/* ==========================================================
+   _fonts
+   ========================================================== */
+/* ==========================================================
+_variables
+========================================================== */
+/* ==========================================================
+_container _body
+========================================================== */
+/* line 117, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+body, html {
+  font: 16px Roboto, Helvetica, Helvetica Neue, Arial;
+  cursor: default;
+  background-image: url("../images/bg.jpg"); }
+
+/* line 122, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.container {
+  max-width: 1150px;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto; }
+
+/* ==========================================================
+   _global
+   ========================================================== */
+/* line 203, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+button {
+  padding: 0;
+  border: none;
+  background: none; }
+
+/* line 208, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.btn_big {
+  border: 0.125rem solid #0067ac;
+  background-color: #fff;
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.15s; }
+  /* line 216, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .btn_big:hover {
+    background-color: #0067ac; }
+    /* line 218, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .btn_big:hover span {
+      color: #fff; }
+    /* line 221, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .btn_big:hover i {
+      background-color: #fff; }
+      /* line 223, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .btn_big:hover i path {
+        fill: #0067ac; }
+  /* line 228, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .btn_big:active {
+    background-color: #000;
+    transition: 0s;
+    border-color: #000; }
+    /* line 232, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .btn_big:active span {
+      color: #fff;
+      transition: 0s; }
+    /* line 237, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .btn_big:active i path {
+      transition: 0s;
+      fill: #000; }
+  /* line 243, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .btn_big span {
+    font-weight: 700;
+    color: #0067ac;
+    font-size: 1.125rem;
+    text-transform: uppercase;
+    margin-left: 25px;
+    margin-right: 25px;
+    padding-top: 2px;
+    transition: 0.15s;
+    white-space: nowrap; }
+  /* line 254, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .btn_big i {
+    background-color: #0067ac;
+    height: 57px;
+    min-width: 60px;
+    transition: 0.15s; }
+    /* line 260, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .btn_big i path {
+      transition: 0.15s; }
+
+/* line 267, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt > :last-child {
+  margin-bottom: 0; }
+
+/* line 270, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt blockquote {
+  line-height: 1.5;
+  font-weight: 600;
+  color: #fff;
+  font-size: 1rem;
+  font-style: italic;
+  padding: 15px 25px;
+  background-color: #0067ac;
+  margin-bottom: 2.19rem;
+  position: relative; }
+  /* line 280, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt blockquote:before {
+    content: '"';
+    font-size: 2rem;
+    position: absolute;
+    left: 0;
+    top: -3px; }
+  /* line 287, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt blockquote:after {
+    content: '"';
+    font-size: 2rem;
+    position: absolute;
+    right: 12px;
+    bottom: -19px; }
+
+/* line 295, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt h1 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  color: #000;
+  font-size: 2rem;
+  text-transform: uppercase;
+  margin-bottom: 1.7rem; }
+
+/* line 303, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt h2 {
+  font-family: "Roboto Condensed";
+  font-weight: 700;
+  color: #000;
+  font-size: 1.73rem;
+  text-transform: uppercase;
+  margin-bottom: 1.56rem; }
+
+/* line 311, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt p {
+  line-height: 1.5;
+  font-weight: 400;
+  color: #000;
+  font-size: 1rem;
+  margin-bottom: 0.7rem; }
+
+/* line 318, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt ul {
+  margin-bottom: 2.19rem;
+  padding-left: 20px; }
+  /* line 321, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt ul li {
+    line-height: 1.33;
+    font-weight: 700;
+    color: #000;
+    font-size: 1.125rem;
+    position: relative;
+    padding-left: 20px; }
+    /* line 328, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .g_txt ul li:not(:last-of-type) {
+      margin-bottom: 20px; }
+    /* line 331, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .g_txt ul li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      background-color: #0067ac;
+      top: .5rem; }
+
+/* line 342, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt h3 {
+  margin-bottom: 0.94rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-top: 12px; }
+
+/* line 348, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt h4 {
+  margin-bottom: 0.94rem;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding-top: 10px; }
+
+/* line 354, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt h5 {
+  margin-bottom: 0.94rem;
+  font-size: 1em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 8px; }
+
+/* line 361, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt h6 {
+  margin-bottom: 0.94rem;
+  font-size: .9em;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding-top: 5px; }
+
+/* line 368, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt img {
+  max-width: 100%;
+  margin-bottom: 1.88rem;
+  height: auto !important; }
+
+/* line 373, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt b {
+  font-weight: 700; }
+
+/* line 376, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt strong {
+  font-weight: 900; }
+
+/* line 379, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt figure {
+  margin-bottom: 2.81rem; }
+  /* line 381, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt figure img {
+    margin-bottom: 8px; }
+  /* line 384, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt figure figcaption {
+    text-align: center; }
+
+/* line 388, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt a {
+  border-bottom: 2px solid #0067ac;
+  color: #0067ac;
+  transition: 0.075s; }
+  /* line 392, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt a:hover {
+    color: #000; }
+
+/* line 396, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.g_txt ol {
+  margin-bottom: 2.19rem;
+  padding-left: 20px; }
+  /* line 399, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt ol li {
+    line-height: 1.33;
+    font-weight: 700;
+    color: #000;
+    font-size: 1.125rem;
+    position: relative;
+    padding-left: 20px;
+    counter-increment: n; }
+    /* line 406, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .g_txt ol li:not(:last-of-type) {
+      margin-bottom: 20px; }
+    /* line 410, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .g_txt ol li:before {
+      content: counter(n) ".";
+      position: absolute;
+      left: 0;
+      top: 2px;
+      width: 11px;
+      height: 10px;
+      color: #0067ac;
+      font-size: .9rem; }
+
+/* ==========================================================
+   _header _footer
+   ========================================================== */
+/* line 430, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.header {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  /* line 433, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__body {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    background-color: #fff; }
+  /* line 438, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__logo {
+    background-color: #fefefe;
+    min-width: 300px;
+    min-height: 121px; }
+  /* line 445, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__right {
+    padding-left: 23px;
+    flex-grow: 2;
+    display: flex;
+    flex-direction: column; }
+  /* line 451, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__top {
+    padding: 15px 25px 15px 0; }
+    /* line 455, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_name h3 {
+      font-weight: 700;
+      color: #0067ac;
+      font-size: 1.45rem;
+      text-transform: uppercase;
+      line-height: .9;
+      font-family: Roboto Condensed; }
+    /* line 463, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_name small {
+      font-family: Roboto Condensed;
+      color: #0067ac;
+      font-size: 0.75rem;
+      text-transform: uppercase; }
+    /* line 471, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_address {
+      margin-left: auto;
+      margin-right: 45px; }
+      /* line 475, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__top_address i {
+        margin-right: 20px;
+        min-width: 40px; }
+      /* line 479, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__top_address h5 {
+        font-weight: 700;
+        color: #000;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        font-family: Roboto Condensed; }
+      /* line 486, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__top_address span {
+        color: #4f4f4f;
+        font-size: 1rem;
+        font-family: Roboto Condensed; }
+    /* line 494, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_tel i {
+      margin-right: 20px;
+      min-width: 40px;
+      animation: shake 3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite; }
+    /* line 499, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_tel a {
+      font-weight: 700;
+      color: #000;
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      display: block; }
+      /* line 505, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__top_tel a:hover {
+        color: #0067ac; }
+  /* line 511, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__bot {
+    margin-top: auto; }
+    /* line 514, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__bot_call {
+      flex-grow: 2;
+      height: 46px;
+      background-color: #b90039; }
+  /* line 520, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header nav {
+    border-top: 1px solid #d6d6d6; }
+    /* line 523, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header nav > a,
+    .header nav .header__submenu {
+      min-height: 45px;
+      font-family: "Roboto Condensed";
+      font-weight: 700;
+      color: #000;
+      font-size: 1rem;
+      margin-right: 33px; }
+      /* line 532, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header nav > a:hover,
+      .header nav .header__submenu:hover {
+        color: #0067ac; }
+      /* line 535, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header nav > a svg,
+      .header nav .header__submenu svg {
+        margin-left: 8px;
+        margin-top: 2px; }
+  /* line 541, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__submenu {
+    position: relative;
+    z-index: 3;
+    user-select: none;
+    cursor: pointer; }
+    /* line 546, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__submenu._active {
+      z-index: 99; }
+      /* line 548, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__submenu._active svg {
+        transform: rotate(180deg); }
+      /* line 551, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__submenu._active span {
+        color: #0067ac; }
+      /* line 555, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__submenu._active .header__submenu_body {
+        visibility: visible;
+        opacity: 1;
+        z-index: 555;
+        animation: op 0.225s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(1) {
+          animation: down 0.1s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(2) {
+          animation: down 0.2s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(3) {
+          animation: down 0.3s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(4) {
+          animation: down 0.4s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(5) {
+          animation: down 0.5s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(6) {
+          animation: down 0.6s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(7) {
+          animation: down 0.7s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(8) {
+          animation: down 0.8s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(9) {
+          animation: down 0.9s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(10) {
+          animation: down 1s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(11) {
+          animation: down 1.1s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(12) {
+          animation: down 1.2s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(13) {
+          animation: down 1.3s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(14) {
+          animation: down 1.4s; }
+        /* line 562, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu._active .header__submenu_body a:nth-of-type(15) {
+          animation: down 1.5s; }
+    /* line 570, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__submenu svg {
+      transition: 0.15s; }
+    /* line 573, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__submenu_body {
+      position: absolute;
+      background-color: #fff;
+      box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.08);
+      padding: 20px;
+      top: 100%;
+      left: 0;
+      visibility: hidden;
+      opacity: 0;
+      width: 200px;
+      max-width: 618px;
+      min-height: 150px;
+      background-image: url("../images/bg.jpg"); }
+      /* line 586, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__submenu_body a {
+        font-weight: 400;
+        color: #000;
+        display: block; }
+        /* line 590, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu_body a:not(:last-of-type) {
+          margin-bottom: 10px; }
+        /* line 594, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu_body a:hover span {
+          color: #000; }
+        /* line 598, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__submenu_body a span {
+          border-bottom: 1px solid #95b4c9; }
+  /* line 605, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__search_input {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+    transition: 0.15s;
+    pointer-events: none; }
+    /* line 615, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__search_input input {
+      height: 48px;
+      border: 1px solid #0067ac;
+      background-color: #fff;
+      color: #0067ac;
+      font-size: 1rem;
+      padding-left: 25px;
+      transition: 0.15s;
+      min-width: 180px;
+      width: calc(100% - 48px);
+      border: none;
+      height: 47px;
+      background-color: #f5f5f5;
+      color: #000; }
+      /* line 139, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__search_input input.placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 142, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__search_input input:-moz-placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 145, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__search_input input::-moz-placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 148, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__search_input input:-ms-input-placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 151, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__search_input input::-webkit-input-placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 190, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__search_input input:focus {
+        border-color: #000; }
+        /* line 139, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__search_input input:focus.placeholder {
+          opacity: 0; }
+        /* line 142, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__search_input input:focus:-moz-placeholder {
+          opacity: 0; }
+        /* line 145, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__search_input input:focus::-moz-placeholder {
+          opacity: 0; }
+        /* line 148, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__search_input input:focus:-ms-input-placeholder {
+          opacity: 0; }
+        /* line 151, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__search_input input:focus::-webkit-input-placeholder {
+          opacity: 0; }
+      /* line 197, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__search_input input._error {
+        border-color: red !important; }
+    /* line 623, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__search_input._active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all; }
+  /* line 629, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__search_close {
+    position: absolute;
+    right: 0px;
+    width: 46px;
+    height: 45px;
+    background-color: #0067ac;
+    top: 1px;
+    cursor: pointer;
+    font-size: 3.0rem;
+    font-family: 'fix';
+    line-height: 0.9;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid #fff; }
+    /* line 643, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__search_close:hover {
+      color: red; }
+  /* line 647, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__search_wrp {
+    position: static; }
+  /* line 651, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__search_btn {
+    background-color: #d9edfb;
+    min-width: 47px;
+    height: 47px;
+    border: 1px solid #d9edfb;
+    transition: 0.15s; }
+    /* line 657, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__search_btn path {
+      transition: 0.15s; }
+    /* line 660, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__search_btn:hover {
+      background-color: #0067ac; }
+      /* line 662, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__search_btn:hover path {
+        fill: #fff; }
+
+/* line 669, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.footer {
+  margin-top: 30px;
+  margin-bottom: 30px; }
+  /* line 672, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__body {
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.06);
+    background-color: #fff; }
+  /* line 677, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__logo {
+    background-color: #fefefe;
+    min-width: 400px;
+    min-height: 121px;
+    transition: 0.15s; }
+  /* line 687, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__right {
+    padding-left: 1px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column; }
+  /* line 693, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__top {
+    padding: 15px 25px 15px 0; }
+    /* line 697, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer__top_name h3 {
+      font-weight: 700;
+      color: #0067ac;
+      font-size: 1.45rem;
+      text-transform: uppercase;
+      line-height: .9;
+      font-family: Roboto Condensed; }
+    /* line 705, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer__top_name small {
+      font-family: Roboto Condensed;
+      color: #0067ac;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      margin-left: 3px; }
+    /* line 713, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer__top_address {
+      margin-left: auto;
+      margin-right: 45px; }
+      /* line 717, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__top_address i {
+        margin-right: 20px;
+        min-width: 40px; }
+      /* line 723, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__top_address h5 {
+        font-weight: 700;
+        color: #000;
+        font-size: 1.125rem;
+        text-transform: uppercase;
+        font-family: Roboto Condensed; }
+      /* line 730, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__top_address span {
+        color: #4f4f4f;
+        font-size: 1rem;
+        font-family: Roboto Condensed; }
+    /* line 738, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer__top_tel i {
+      margin-right: 20px;
+      min-width: 40px;
+      animation: shake 3s cubic-bezier(0.36, 0.07, 0.19, 0.97) both infinite; }
+    /* line 743, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer__top_tel a {
+      font-weight: 700;
+      color: #000;
+      font-size: 1.125rem;
+      text-transform: uppercase;
+      display: block; }
+      /* line 749, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__top_tel a:hover {
+        color: #0067ac; }
+  /* line 755, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__bot {
+    margin-top: auto; }
+    /* line 758, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer__bot_call {
+      flex-grow: 2;
+      height: 46px;
+      background-color: #b90039; }
+  /* line 764, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer nav {
+    border-top: 1px solid #d6d6d6; }
+    /* line 767, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer nav > a,
+    .footer nav .header__submenu {
+      min-height: 45px;
+      font-family: "Roboto Condensed";
+      font-weight: 700;
+      color: #000;
+      font-size: 1rem;
+      margin-right: 33px; }
+      /* line 776, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer nav > a:hover,
+      .footer nav .header__submenu:hover {
+        color: #0067ac; }
+      /* line 779, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer nav > a svg,
+      .footer nav .header__submenu svg {
+        margin-left: 8px;
+        margin-top: 2px; }
+  /* line 787, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__search_input {
+    position: absolute;
+    visibility: hidden;
+    opacity: 0;
+    left: 0;
+    top: 0px;
+    z-index: 3;
+    width: 100%;
+    transition: 0.15s;
+    pointer-events: none; }
+    /* line 797, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer__search_input input {
+      height: 48px;
+      border: 1px solid #0067ac;
+      background-color: #fff;
+      color: #0067ac;
+      font-size: 1rem;
+      padding-left: 25px;
+      transition: 0.15s;
+      min-width: 180px;
+      width: calc(100% - 48px);
+      border: none;
+      height: 47px;
+      background-color: #f5f5f5;
+      color: #000; }
+      /* line 139, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__search_input input.placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 142, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__search_input input:-moz-placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 145, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__search_input input::-moz-placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 148, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__search_input input:-ms-input-placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 151, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__search_input input::-webkit-input-placeholder {
+        color: #0067ac;
+        transition: 0.15s; }
+      /* line 190, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__search_input input:focus {
+        border-color: #000; }
+        /* line 139, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .footer__search_input input:focus.placeholder {
+          opacity: 0; }
+        /* line 142, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .footer__search_input input:focus:-moz-placeholder {
+          opacity: 0; }
+        /* line 145, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .footer__search_input input:focus::-moz-placeholder {
+          opacity: 0; }
+        /* line 148, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .footer__search_input input:focus:-ms-input-placeholder {
+          opacity: 0; }
+        /* line 151, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .footer__search_input input:focus::-webkit-input-placeholder {
+          opacity: 0; }
+      /* line 197, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .footer__search_input input._error {
+        border-color: red !important; }
+    /* line 805, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer__search_input._active {
+      opacity: 1;
+      visibility: visible;
+      pointer-events: all; }
+  /* line 811, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__search_close {
+    position: absolute;
+    right: 0px;
+    width: 46px;
+    height: 45px;
+    background-color: #0067ac;
+    top: 1px;
+    cursor: pointer;
+    font-size: 3.0rem;
+    font-family: 'fix';
+    line-height: 0.9;
+    text-align: center;
+    color: #fff;
+    border-right: 1px solid #fff; }
+    /* line 825, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .footer__search_close:hover {
+      color: red; }
+  /* line 829, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__search_wrp {
+    position: relative; }
+
+/* line 836, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_main {
+  margin-bottom: 30px; }
+  /* line 838, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__slider_wrp {
+    box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    position: relative; }
+  /* line 843, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__item {
+    padding: 30px 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 450px; }
+  /* line 851, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__left {
+    padding: 15px 30px 15px 60px;
+    max-width: 651px; }
+    /* line 854, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_main__left h1 {
+      font-family: "Roboto Condensed";
+      font-weight: 700;
+      color: #000;
+      font-size: 2.5rem;
+      text-transform: uppercase;
+      margin-bottom: 15px; }
+    /* line 862, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_main__left h4 {
+      font-family: "Roboto Condensed";
+      font-weight: 400;
+      color: #0067ac;
+      font-size: 1.65rem;
+      margin-bottom: 45px; }
+  /* line 870, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__right {
+    padding-right: 20px; }
+    /* line 872, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_main__right img {
+      max-width: 100%; }
+  /* line 876, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__pager {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 20px;
+    right: 36px; }
+    /* line 883, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_main__pager span {
+      width: 5px;
+      height: 5px;
+      cursor: pointer;
+      background-color: #6f6f6f;
+      margin-bottom: 7px;
+      transition: 0.15s; }
+      /* line 890, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_main__pager span:hover {
+        background-color: #0067ac;
+        transform: scale(2); }
+      /* line 894, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_main__pager span._active {
+        transform: scale(3);
+        background-color: #0067ac;
+        margin-bottom: 10px;
+        margin-top: 3px; }
+        /* line 899, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .s_main__pager span._active:hover {
+          transform: scale(3); }
+  /* line 905, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__arr {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    z-index: 5; }
+    /* line 910, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_main__arr_top, .s_main__arr_bot {
+      border: 2px solid #0067ac;
+      width: 35px;
+      height: 35px;
+      cursor: pointer;
+      user-select: none; }
+      /* line 918, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_main__arr_top:hover, .s_main__arr_bot:hover {
+        background-color: #0067ac; }
+        /* line 920, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .s_main__arr_top:hover path, .s_main__arr_bot:hover path {
+          fill: #fff; }
+      /* line 924, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_main__arr_top svg, .s_main__arr_bot svg {
+        margin-left: -1px; }
+    /* line 928, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_main__arr_top {
+      margin-bottom: 5px; }
+
+/* line 933, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_why {
+  margin-bottom: 30px; }
+  /* line 938, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_why__item {
+    box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    width: calc(20% - 25px);
+    padding: 20px 15px;
+    text-align: center;
+    flex-direction: column;
+    transition: 0.15s; }
+    /* line 947, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_why__item path {
+      transition: 0.15s; }
+    /* line 950, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_why__item:hover {
+      background-color: #0067ac; }
+      /* line 952, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_why__item:hover path {
+        fill: #fff; }
+      /* line 955, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_why__item:hover p {
+        color: #fff; }
+    /* line 959, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_why__item i {
+      min-height: 73px;
+      margin-bottom: 10px; }
+    /* line 964, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_why__item p {
+      font-weight: 400;
+      color: #000;
+      transition: 0.15s; }
+
+/* line 972, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_categ__body {
+  box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  margin-bottom: 30px;
+  padding: 60px; }
+
+/* line 978, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_categ h2 {
+  font-weight: 700;
+  color: #000;
+  font-size: 1.875rem;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  font-family: Roboto Condensed; }
+
+/* line 986, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_categ h4 {
+  font-weight: 700;
+  font-size: 1.125rem;
+  text-transform: uppercase;
+  font-family: Roboto Condensed;
+  margin-bottom: 30px; }
+  /* line 992, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ h4 strong {
+    color: #0067ac; }
+
+/* line 996, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_categ__remont {
+  flex-wrap: wrap; }
+  /* line 999, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ__remont_block {
+    height: 115px;
+    width: calc(33.333% - 10px);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 20px;
+    z-index: 0;
+    position: relative; }
+    /* line 1009, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_categ__remont_block:before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      z-index: -1;
+      background-color: rgba(0, 0, 0, 0.61);
+      transition: 0.15s;
+      opacity: 0; }
+    /* line 1022, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_categ__remont_block:hover:before {
+      opacity: 1; }
+    /* line 1026, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_categ__remont_block span {
+      font-weight: 700;
+      color: #fff;
+      font-size: 0.875rem;
+      text-transform: uppercase;
+      text-align: center; }
+
+/* line 1035, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_categ hr {
+  border: none;
+  border-bottom: 1px solid #d6d6d6;
+  margin: 20px 0 30px; }
+
+/* line 1040, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_categ__tovar {
+  flex-wrap: wrap; }
+  /* line 1044, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ__tovar .s_categ__remont_block._w25 {
+    width: calc(25% - 10px); }
+
+/* line 1050, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_garant {
+  margin-bottom: 30px; }
+  /* line 1052, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__body {
+    box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    padding: 22px 60px;
+    position: relative;
+    z-index: 0;
+    overflow: hidden; }
+    /* line 1060, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_garant__body:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 50%;
+      height: 100%;
+      background-color: #0067ac;
+      z-index: -1; }
+    /* line 1070, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_garant__body:after {
+      content: '';
+      position: absolute;
+      left: calc(50% - 156px);
+      top: -39px;
+      width: 200px;
+      height: 200px;
+      background-color: #0067ac;
+      z-index: -1;
+      transform: rotate(45deg); }
+  /* line 1083, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__left h3 {
+    font-weight: 700;
+    color: #fff;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    font-family: Roboto Condensed; }
+  /* line 1090, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__left p {
+    color: #fff;
+    font-size: 1.05rem;
+    font-family: Roboto Condensed; }
+  /* line 1097, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__right h3 {
+    font-weight: 700;
+    color: #000;
+    font-size: 1.875rem;
+    text-transform: uppercase; }
+    /* line 1102, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_garant__right h3 span {
+      font-size: 1.125rem;
+      display: block;
+      margin-top: 10px; }
+  /* line 1108, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__right svg {
+    position: absolute;
+    right: 59px;
+    top: 15px;
+    z-index: -1;
+    opacity: 0.5; }
+
+/* line 1121, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_cols__left, .s_cols__right {
+  box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.06);
+  background-color: #fff;
+  width: calc(50% - 15px);
+  padding: 60px; }
+
+/* line 1129, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_reviews {
+  margin-bottom: 30px; }
+  /* line 1131, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__body {
+    padding: 60px;
+    box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.06);
+    background-color: #fff; }
+  /* line 1136, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__head {
+    margin-bottom: 40px; }
+    /* line 1139, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__head h2 {
+      font-weight: 700;
+      color: #000;
+      font-size: 1.875rem;
+      text-transform: uppercase;
+      font-family: Roboto Condensed; }
+  /* line 1148, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__arr_left, .s_reviews__arr_right {
+    border: 2px solid #0067ac;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2px;
+    user-select: none; }
+    /* line 1159, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__arr_left:hover, .s_reviews__arr_right:hover {
+      background-color: #0067ac; }
+      /* line 1161, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_reviews__arr_left:hover path, .s_reviews__arr_right:hover path {
+        fill: #fff; }
+    /* line 1165, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__arr_left svg, .s_reviews__arr_right svg {
+      margin-left: -1px; }
+  /* line 1169, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__arr_left {
+    margin-right: 5px;
+    padding-left: 0; }
+  /* line 1179, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__item {
+    width: calc(50% - 20px);
+    padding-bottom: 5px; }
+    /* line 1182, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__item_head {
+      margin-bottom: 17px; }
+      /* line 1185, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_reviews__item_head h4 {
+        color: #000;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        font-family: Roboto Condensed;
+        margin-right: 15px; }
+      /* line 1192, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_reviews__item_head small {
+        font-weight: 400;
+        color: #6f6f6f;
+        font-size: 0.875rem; }
+    /* line 1198, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__item_img {
+      height: 65px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      margin-right: 25px;
+      max-width: 150px;
+      padding-bottom: 2px; }
+      /* line 1207, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_reviews__item_img img {
+        max-height: 55px;
+        max-width: 100%; }
+    /* line 1213, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__item_txt p {
+      line-height: 1.33;
+      font-weight: 400;
+      color: #000;
+      font-size: 1.1rem;
+      margin-bottom: 5px; }
+    /* line 1221, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__item_hidden {
+      display: none; }
+      /* line 1223, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_reviews__item_hidden._active {
+        display: inline;
+        animation: op 0.3s; }
+    /* line 1228, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__item_more {
+      color: #0067ac;
+      font-size: 1.1rem;
+      border-bottom: 2px solid #0067ac;
+      display: inline-block;
+      transition: 0.15s; }
+      /* line 1234, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_reviews__item_more:hover {
+        border-color: transparent; }
+
+/* line 1240, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_our {
+  margin-bottom: 30px; }
+  /* line 1242, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_our__imgs {
+    flex-wrap: wrap; }
+    /* line 1245, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_our__imgs_img {
+      width: 48%;
+      margin-bottom: 17px; }
+      /* line 1248, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_our__imgs_img:nth-of-type(2n) {
+        text-align: center; }
+  /* line 1255, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_our .s_cols__right .s_our__imgs_img:first-of-type {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px; }
+  /* line 1262, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_our h3 {
+    font-weight: 700;
+    color: #000;
+    font-size: 1.875rem;
+    text-transform: uppercase;
+    font-family: Roboto Condensed;
+    margin-bottom: 25px; }
+  /* line 1270, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_our a {
+    font-weight: 400;
+    color: #0067ac;
+    font-size: 1.125rem;
+    border-bottom: 2px solid #0067ac;
+    display: inline-block;
+    transition: 0.15s; }
+    /* line 1277, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_our a:hover {
+      border-color: transparent; }
+
+/* line 1282, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.s_cert {
+  margin-bottom: 30px; }
+  /* line 1284, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__body {
+    box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.06);
+    background-color: #fff;
+    padding: 60px; }
+  /* line 1289, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__head {
+    margin-bottom: 35px; }
+    /* line 1292, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_cert__head h2 {
+      font-weight: 700;
+      color: #000;
+      font-size: 1.875rem;
+      text-transform: uppercase; }
+  /* line 1300, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__arr_left, .s_cert__arr_right {
+    border: 2px solid #0067ac;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 2px;
+    user-select: none; }
+    /* line 1311, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_cert__arr_left:hover, .s_cert__arr_right:hover {
+      background-color: #0067ac; }
+      /* line 1313, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_cert__arr_left:hover path, .s_cert__arr_right:hover path {
+        fill: #fff; }
+    /* line 1317, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_cert__arr_left svg, .s_cert__arr_right svg {
+      margin-left: -1px; }
+  /* line 1321, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__arr_left {
+    margin-right: 5px;
+    padding-left: 0; }
+  /* line 1326, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__slider {
+    display: flex;
+    align-items: center; }
+    /* line 1329, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_cert__slider_img {
+      text-align: center;
+      cursor: pointer;
+      position: relative; }
+      /* line 1334, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_cert__slider_img:hover:before {
+        transform: scale(1);
+        opacity: 1; }
+      /* line 1338, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_cert__slider_img:hover:after {
+        opacity: 1; }
+      /* line 1342, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_cert__slider_img:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background-color: rgba(255, 255, 255, 0.5);
+        opacity: 0;
+        transition: 0.15s; }
+      /* line 1353, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_cert__slider_img:before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        background-image: url("../images/zoom.svg");
+        width: 62px;
+        margin-left: -31px;
+        margin-top: -40px;
+        height: 62px;
+        z-index: 5;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        transform: scale(0.5);
+        opacity: 0;
+        transition: 0.15s; }
+      /* line 1371, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_cert__slider_img img {
+        max-width: 100%; }
+
+/* ==========================================================
+   _inner
+   ========================================================== */
+/* line 1382, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  background-color: #000;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s, visibility 0.45s; }
+  /* line 1394, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .overlay._visible {
+    visibility: visible;
+    opacity: 0.5;
+    pointer-events: all;
+    transform: none; }
+
+/* ==========================================================
+   _responsive
+   ========================================================== */
+@media only screen and (min-width: 1200px) {
+  /* line 1407, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__hamb {
+    display: none; } }
+
+@media only screen and (max-width: 1199.5px) {
+  /* line 1413, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  body,
+  html {
+    font-size: 15px; }
+  /* line 1420, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__bot nav,
+  .footer__bot nav {
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
+    z-index: 5;
+    width: calc(100% - 47px);
+    display: none !important;
+    background-color: #fff;
+    padding-left: 20px; }
+    /* line 1430, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__bot nav._active,
+    .footer__bot nav._active {
+      display: block !important;
+      animation: op 0.225s;
+      box-shadow: 0 0.25rem 1.125rem rgba(0, 0, 0, 0.06); }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(1),
+      .footer__bot nav._active a:nth-of-type(1) {
+        animation: down 0.1s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(2),
+      .footer__bot nav._active a:nth-of-type(2) {
+        animation: down 0.2s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(3),
+      .footer__bot nav._active a:nth-of-type(3) {
+        animation: down 0.3s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(4),
+      .footer__bot nav._active a:nth-of-type(4) {
+        animation: down 0.4s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(5),
+      .footer__bot nav._active a:nth-of-type(5) {
+        animation: down 0.5s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(6),
+      .footer__bot nav._active a:nth-of-type(6) {
+        animation: down 0.6s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(7),
+      .footer__bot nav._active a:nth-of-type(7) {
+        animation: down 0.7s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(8),
+      .footer__bot nav._active a:nth-of-type(8) {
+        animation: down 0.8s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(9),
+      .footer__bot nav._active a:nth-of-type(9) {
+        animation: down 0.9s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(10),
+      .footer__bot nav._active a:nth-of-type(10) {
+        animation: down 1s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(11),
+      .footer__bot nav._active a:nth-of-type(11) {
+        animation: down 1.1s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(12),
+      .footer__bot nav._active a:nth-of-type(12) {
+        animation: down 1.2s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(13),
+      .footer__bot nav._active a:nth-of-type(13) {
+        animation: down 1.3s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(14),
+      .footer__bot nav._active a:nth-of-type(14) {
+        animation: down 1.4s; }
+      /* line 1436, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__bot nav._active a:nth-of-type(15),
+      .footer__bot nav._active a:nth-of-type(15) {
+        animation: down 1.5s; }
+    /* line 1442, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__bot nav > a,
+    .header__bot nav .header__submenu,
+    .footer__bot nav > a,
+    .footer__bot nav .header__submenu {
+      margin-right: 0; }
+  /* line 1447, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__bot_call,
+  .footer__bot_call {
+    max-width: 250px; }
+  /* line 1451, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__hamb,
+  .footer__hamb {
+    margin-left: auto;
+    margin-right: 25px;
+    order: -1;
+    height: 27px;
+    width: 28px;
+    cursor: pointer;
+    display: flex;
+    position: relative;
+    z-index: 555;
+    justify-content: space-between;
+    flex-direction: column;
+    user-select: none;
+    transition: transform 0.15s;
+    pointer-events: all; }
+    /* line 1466, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__hamb._close,
+    .footer__hamb._close {
+      transform: translateX(13px) translateY(9px); }
+      /* line 1469, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__hamb._close span:nth-of-type(1),
+      .footer__hamb._close span:nth-of-type(1) {
+        transform: rotate(-45deg) translate(-16px); }
+      /* line 1472, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__hamb._close span:nth-of-type(2),
+      .footer__hamb._close span:nth-of-type(2) {
+        width: 0; }
+      /* line 1475, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__hamb._close span:nth-of-type(3),
+      .footer__hamb._close span:nth-of-type(3) {
+        transform: rotate(45deg) translate(-16px); }
+    /* line 1480, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__hamb span,
+    .footer__hamb span {
+      transition: transform 0.3s, all 0.15s;
+      width: 37px;
+      height: 4px;
+      background-color: #0067ac; }
+  /* line 1487, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__search,
+  .footer__search {
+    z-index: 3; }
+    /* line 1489, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__search_wrp,
+    .footer__search_wrp {
+      flex-grow: 2;
+      align-items: center !important; }
+    /* line 1493, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__search_input,
+    .footer__search_input {
+      width: 100%; }
+  /* line 1500, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__bot nav {
+    top: auto;
+    bottom: 0; }
+  /* line 1506, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .footer__hamb._close {
+    transform: translateX(13px) translateY(-9px); }
+  /* line 1511, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__right {
+    margin-right: -30px; }
+  /* line 1514, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_why__item {
+    width: calc(20% - 5px);
+    padding-left: 10px;
+    padding-right: 10px; }
+  /* line 1519, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__search_close,
+  .footer__search_close {
+    line-height: 1; }
+  /* line 1524, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__submenu_body {
+    max-width: calc(100% + 20px);
+    left: -20px; }
+  /* line 1528, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__top_name h3,
+  .footer__top_name h3 {
+    font-size: 1.55rem; } }
+
+@media only screen and (max-width: 980.5px) {
+  /* line 1537, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__logo,
+  .footer__logo {
+    height: 177px; }
+  /* line 1540, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__top,
+  .footer__top {
+    flex-wrap: wrap; }
+    /* line 1542, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_name,
+    .footer__top_name {
+      width: 100%;
+      margin-bottom: 15px; }
+    /* line 1546, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_address,
+    .footer__top_address {
+      margin-right: auto;
+      margin-left: 0; }
+  /* line 1552, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__right img {
+    max-width: 230px; }
+  /* line 1555, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__left h1 {
+    font-size: 2.3rem; }
+  /* line 1559, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_why__body {
+    flex-wrap: wrap;
+    justify-content: center !important; }
+  /* line 1563, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_why__item {
+    width: calc(33.333% - 30px);
+    margin-bottom: 22px;
+    margin-left: 12px;
+    margin-right: 12px; }
+  /* line 1571, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__left {
+    padding: 30px 30px 30px 30px; }
+  /* line 1575, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ__body {
+    padding: 30px 30px 15px; }
+  /* line 1579, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__right {
+    max-width: 242px; }
+  /* line 1582, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__left {
+    max-width: 348px; }
+  /* line 1587, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__body {
+    padding: 30px; }
+  /* line 1591, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__slider_item {
+    flex-wrap: wrap; }
+  /* line 1595, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__item {
+    width: 100%; }
+    /* line 1597, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__item:first-of-type {
+      margin-bottom: 40px; }
+  /* line 1602, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__body {
+    padding-left: 30px; }
+  /* line 1606, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_our .s_cols__left,
+  .s_our .s_cols__right {
+    padding: 30px; }
+  /* line 1612, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_our__imgs_img img {
+    max-width: 84%; }
+  /* line 1618, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__body {
+    padding: 30px; }
+  /* line 1623, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__left h4 br {
+    display: none; }
+  /* line 1628, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__left h4 {
+    margin-bottom: 25px; } }
+
+@media only screen and (max-width: 768.5px) {
+  /* line 1635, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  body,
+  html {
+    font-size: 14px; }
+  /* line 1641, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__logo,
+  .footer__logo {
+    height: 128px; }
+  /* line 1644, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__top,
+  .footer__top {
+    flex-direction: column;
+    max-width: 229px;
+    width: 100%; }
+    /* line 1648, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_name,
+    .footer__top_name {
+      display: none; }
+    /* line 1652, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_address i,
+    .footer__top_address i {
+      min-width: 25px;
+      margin-right: 14px; }
+      /* line 1655, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__top_address i svg,
+      .footer__top_address i svg {
+        width: 28px; }
+    /* line 1660, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__top_tel,
+    .footer__top_tel {
+      margin-right: auto;
+      margin-left: 0;
+      margin-top: 15px; }
+      /* line 1664, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .header__top_tel i,
+      .footer__top_tel i {
+        min-width: 25px;
+        margin-right: 14px; }
+        /* line 1667, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+        .header__top_tel i svg,
+        .footer__top_tel i svg {
+          width: 28px; }
+  /* line 1673, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__right,
+  .footer__right {
+    flex-direction: row; }
+  /* line 1676, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__bot,
+  .footer__bot {
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-top: 0; }
+    /* line 1680, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__bot_call,
+    .footer__bot_call {
+      margin-left: auto;
+      margin-top: auto; }
+  /* line 1686, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__search_wrp,
+  .footer__search_wrp {
+    width: 100%;
+    margin-bottom: auto; }
+  /* line 1693, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ__remont_block {
+    width: calc(33.333% - 10px); }
+    /* line 1695, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_categ__remont_block._w25 {
+      width: calc(50% - 10px) !important; }
+  /* line 1699, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt ul,
+  .g_txt ol {
+    padding-left: 0; }
+  /* line 1704, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_catalog__body {
+    flex-wrap: wrap; }
+  /* line 1707, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_catalog__col {
+    width: 100%; }
+  /* line 1711, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant__right {
+    max-width: 200px; } }
+
+@media only screen and (max-width: 666.5px) {
+  /* line 1719, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__right,
+  .footer__right {
+    flex-direction: column; }
+  /* line 1722, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__logo,
+  .footer__logo {
+    height: 220px; }
+  /* line 1725, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__bot,
+  .footer__bot {
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-top: 0;
+    margin-left: 0; }
+    /* line 1730, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__bot_call,
+    .footer__bot_call {
+      margin-top: auto;
+      max-width: 100%;
+      margin-left: 0; }
+  /* line 1738, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__right {
+    display: none; }
+  /* line 1741, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__item {
+    padding: 0; }
+  /* line 1744, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__left {
+    padding-right: 60px; }
+  /* line 1747, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_why__item {
+    width: calc(50% - 26px); }
+  /* line 1751, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ__body {
+    padding: 20px; }
+  /* line 1754, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ__remont_block {
+    width: calc(50% - 10px);
+    margin-left: auto;
+    margin-right: auto; }
+  /* line 1759, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_garant {
+    display: none; }
+  /* line 1763, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cols__body {
+    flex-wrap: wrap; }
+  /* line 1766, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cols__left {
+    margin-bottom: 20px; }
+  /* line 1769, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cols__left, .s_cols__right {
+    width: 100%; }
+    /* line 1772, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_cols__left br, .s_cols__right br {
+      display: block !important; }
+  /* line 1778, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__body {
+    padding: 20px; }
+  /* line 1783, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_our .s_cols__left,
+  .s_our .s_cols__right {
+    padding: 20px; }
+  /* line 1788, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__body {
+    padding: 20px; }
+  /* line 1793, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt blockquote {
+    margin-bottom: 1.6rem; }
+  /* line 1796, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt h1 {
+    margin-bottom: 1.5rem; }
+  /* line 1799, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt h2 {
+    margin-bottom: 1.2rem; }
+  /* line 1802, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt p {
+    margin-bottom: 1.5rem; }
+  /* line 1805, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt ul {
+    margin-bottom: 1.7rem; }
+  /* line 1808, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt h3 {
+    margin-bottom: 0.7rem; }
+  /* line 1811, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt h4 {
+    margin-bottom: 0.5rem; }
+  /* line 1814, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt h5 {
+    margin-bottom: 0.7rem; }
+  /* line 1817, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt h6 {
+    margin-bottom: 0.7rem; }
+  /* line 1820, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt img {
+    margin-bottom: 1.3rem; }
+  /* line 1823, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt figure {
+    margin-bottom: 1.7rem; }
+  /* line 1826, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt ol {
+    margin-bottom: 1.3rem; }
+  /* line 1829, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .g_txt__table {
+    margin-bottom: 20px; }
+  /* line 1835, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__arr {
+    right: 5px;
+    bottom: 5px; }
+  /* line 1839, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__pager {
+    top: 11px;
+    right: 20px; } }
+
+@media only screen and (max-width: 500.5px) {
+  /* line 1847, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  body,
+  html {
+    font-size: 13px; }
+  /* line 1851, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .container {
+    padding-left: 10px;
+    padding-right: 10px; }
+  /* line 1855, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header,
+  .footer {
+    margin-bottom: 20px;
+    margin-top: 10px; }
+    /* line 1860, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .header__bot_call,
+    .footer__bot_call {
+      margin-left: -23px;
+      max-width: calc(100% + 47px);
+      border-left: 1px solid #fff; }
+  /* line 1867, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  section {
+    margin-bottom: 20px !important; }
+  /* line 1870, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_why__item {
+    width: calc(50% - 13px);
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 10px; }
+  /* line 1877, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ h2 {
+    margin-bottom: 10px; }
+  /* line 1880, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ h4 {
+    margin-bottom: 15px; }
+  /* line 1883, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ hr {
+    margin: 9px 0 20px; }
+  /* line 1887, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__arr {
+    width: 84px; }
+  /* line 1890, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__arr {
+    margin-left: 15px;
+    width: 84px; } }
+
+@media only screen and (max-width: 420.5px) {
+  /* line 1902, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__body,
+  .footer__body {
+    flex-wrap: wrap; }
+  /* line 1905, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__logo,
+  .footer__logo {
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 5px; }
+  /* line 1912, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .header__bot_call,
+  .footer__bot_call {
+    border: none; }
+  /* line 1917, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  br {
+    display: none; }
+  /* line 1920, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__arr {
+    display: none; }
+  /* line 1923, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__left {
+    max-width: 100%;
+    padding-left: 20px;
+    padding-right: 20px; }
+    /* line 1927, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_main__left h1 {
+      font-size: 1.75rem; }
+    /* line 1930, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_main__left .btn_big {
+      height: 50px; }
+      /* line 1932, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_main__left .btn_big span {
+        margin-left: 15px;
+        margin-right: 15px;
+        font-size: 1.05rem; }
+      /* line 1937, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+      .s_main__left .btn_big i {
+        height: 50px;
+        max-width: 50px; }
+  /* line 1943, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_why__item {
+    width: 100%; }
+  /* line 1947, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ h2 {
+    font-size: 1.6rem; }
+  /* line 1950, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_categ__remont_block {
+    width: 100%;
+    margin-bottom: 10px; }
+    /* line 1953, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_categ__remont_block._w25 {
+      width: 100% !important; }
+  /* line 1960, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__head {
+    flex-wrap: wrap;
+    text-align: center; }
+    /* line 1963, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+    .s_reviews__head h2 {
+      margin-bottom: 14px; }
+  /* line 1967, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__arr {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: -15px; }
+  /* line 1974, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_reviews__item_img {
+    min-width: 30px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; }
+  /* line 1980, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_our {
+    text-align: center; }
+  /* line 1984, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__head {
+    flex-wrap: wrap;
+    text-align: center; }
+  /* line 1988, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_cert__arr {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: -10px; }
+  /* line 1996, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  .s_main__left h4 {
+    font-size: 1.5rem; } }
+
+/* line 2005, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+::-webkit-scrollbar {
+  width: 14px;
+  /* for vertical scrollbars */
+  height: 14px;
+  /* for horizontal scrollbars */ }
+
+/* line 2011, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+::-webkit-scrollbar-track {
+  background-color: #fdfdfd;
+  border-left: 1px solid #ddd; }
+
+/* line 2017, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+::-webkit-scrollbar-thumb {
+  background: #0067ac;
+  border-left: 1px solid transparent;
+  border-left-color: #0067ac; }
+  /* line 2022, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #0067ac;
+    border-color: #0067ac; }
+  /* line 2026, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  ::-webkit-scrollbar-thumb:active {
+    background-color: #003960; }
+
+@keyframes down {
+  from {
+    opacity: 0;
+    transform: translateY(-35px); }
+  to {
+    opacity: 1;
+    transform: none; } }
+
+@keyframes op {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
+
+@keyframes shake {
+  2.5%, 22.5% {
+    transform: translate3d(-1px, 0, 0); }
+  5%, 20% {
+    transform: translate3d(2px, 0, 0); }
+  7.5%, 12.5%, 17.5% {
+    transform: translate3d(-3px, 0, 0); }
+  10%, 15% {
+    transform: translate3d(3px, 0, 0); } }
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  /* line 2057, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  select,
+  textarea,
+  input {
+    font-size: 16px; } }
+
+/*** Styles added to fix the issue with zoom in on iphone ***/
+/* iPhone < 5: */
+@media screen and (device-aspect-ratio: 2 / 3) {
+  /* line 2066, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"] {
+    font-size: 16px; } }
+
+/* iPhone 5, 5C, 5S, iPod Touch 5g */
+@media screen and (device-aspect-ratio: 40 / 71) {
+  /* line 2075, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"] {
+    font-size: 16px; } }
+
+/* iPhone 6, iPhone 6s, iPhone 7 portrait/landscape */
+@media screen and (device-aspect-ratio: 375 / 667) {
+  /* line 2084, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"] {
+    font-size: 16px; } }
+
+/* iPhone 6 Plus, iPhone 6s Plus, iPhone 7 Plus portrait/landscape */
+@media screen and (device-aspect-ratio: 9 / 16) {
+  /* line 2093, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  select, textarea, input[type="text"], input[type="password"],
+  input[type="datetime"], input[type="datetime-local"],
+  input[type="date"], input[type="month"], input[type="time"],
+  input[type="week"], input[type="number"], input[type="email"],
+  input[type="url"] {
+    font-size: 16px; } }
+
+/* ==========================================================
+   _flex
+   ========================================================== */
+/* line 2104, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_sb_fs, .footer__body, .s_reviews__slider_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; }
+
+/* line 2109, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_sb_fe {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; }
+
+/* line 2114, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_sb_c, .s_main__item, .s_garant__body, .s_reviews__head, .s_cert__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+/* line 2119, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_sb_s, .s_why__body, .s_categ__remont, .s_categ__tovar, .s_cols__body {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch; }
+
+/* line 2124, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_sa_fs {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start; }
+
+/* line 2129, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_sa_fe {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end; }
+
+/* line 2134, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_sa_c {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
+/* line 2139, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_c_fs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; }
+
+/* line 2144, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_c_fe {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end; }
+
+/* line 2149, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_c_c, .btn_big i, .header__logo, .footer__logo, .s_main__arr_top, .s_main__arr_bot, .s_why__item, .s_why__item i, .s_categ__remont_block, .s_reviews__item_img {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* line 2154, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_fs_c, .header__top, .header__top_address, .header__top_tel, .header__bot, .header nav, .header nav > a,
+.header nav .header__submenu, .footer__top, .footer__top_address, .footer__top_tel, .footer__bot, .footer nav, .footer nav > a,
+.footer nav .header__submenu, .s_our__imgs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+/* line 2159, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_fs_fs {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start; }
+
+/* line 2164, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_fs_s, .header__body, .header__search_wrp, .footer__search_wrp {
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch; }
+
+/* line 2169, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_fs_fe, .s_reviews__item_head {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end; }
+
+/* line 2174, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_fe_fe {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/* line 2179, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_fe_s {
+  display: flex;
+  justify-content: flex-end;
+  align-items: stretch; }
+
+/* line 2184, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_fe_fe {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end; }
+
+/* line 2189, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+._flex_fe_fs {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start; }
+
+/* ==========================================================
+   _print
+   ========================================================== */
+@media print {
+  /* line 2202, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  *,
+  *:before,
+  *:after {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+  /* line 2211, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+  /* line 2216, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+  /* line 2220, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+  /* line 2224, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  a[href^="#"]:after,
+  a[href^="javascript:"]:after {
+    content: ""; }
+  /* line 2229, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+  /* line 2235, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  thead {
+    display: table-header-group; }
+  /* line 2239, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+  /* line 2244, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  img {
+    max-width: 100% !important; }
+  /* line 2248, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+  /* line 2255, ../Downloads/drive-download-20180629T170502Z-001/0 novator/css/main.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=main.css.map */
